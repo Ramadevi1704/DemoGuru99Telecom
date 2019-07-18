@@ -1,0 +1,443 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11395446670,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserlaunch()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "To test the generate customer ID functionality",
+        "description": "",
+        "id": "to-test-add-customer-functionality;to-test-the-generate-customer-id-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 198148126,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserQuit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1192711388,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is in add customer page",
+            "match": {
+              "location": "AddCustomer.the_user_is_in_add_customer_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1414709402,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user fill in valid customer details",
+            "match": {
+              "location": "AddCustomer.the_user_fill_in_valid_customer_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "test"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "selenium"
+                ]
+              },
+              {
+                "cells": [
+                  "emailaddress",
+                  "test@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "adress",
+                  "chennai"
+                ]
+              },
+              {
+                "cells": [
+                  "phoneNo",
+                  "746489"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1121131909,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user clicks in submit button",
+            "match": {
+              "location": "AddCustomer.the_user_clicks_in_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84696184,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user should see the customer id generated",
+            "match": {
+              "location": "AccessPage.the_user_should_see_the_customer_id_generated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To test add customer functionality",
+    "description": "",
+    "id": "to-test-add-customer-functionality",
+    "keyword": "Feature",
+    "uri": "C:/Users/Rama/eclipse-workspace/Cucum/resource.pkg/AddCustomer.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9403299194,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserlaunch()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "To test add tariff plan functionality",
+        "description": "",
+        "id": "to-test-the-add-tariff-plan-and-add-tariff-plan-to-customer-functionality;to-test-add-tariff-plan-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2067666416,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserQuit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1295702426,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is in add tariff plan page",
+            "match": {
+              "location": "AddTariffPlanpage.the_user_is_in_add_tariff_plan_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1012612235,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user fill in valid tariff plan details \"200\",\"100\",\"50\",\"100\",\"10\",\"30\",\"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"100\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"50\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"100\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"30\"",
+                  "offset": 71
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 76
+                }
+              ],
+              "location": "AddTariffPlanpage.the_user_fill_in_valid_tariff_plan_details(String,String,String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1047048656,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks submit button in add tariff plan page",
+            "match": {
+              "location": "AddTariffPlanpage.the_user_clicks_submit_button_in_add_tariff_plan_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 189808243,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "then user should see the success message",
+            "match": {
+              "location": "AddTariffPlanpage.then_user_should_see_the_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12568012018,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserlaunch()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "To test the add tariff plan to customer functionality",
+        "description": "",
+        "id": "to-test-the-add-tariff-plan-and-add-tariff-plan-to-customer-functionality;to-test-the-add-tariff-plan-to-customer-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 2486253686,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserQuit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 954373343,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user is in add tariff plan to customer page",
+            "match": {
+              "location": "AddTariffPlanToCustomer.the_user_is_in_add_tariff_plan_to_customer_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1332506238,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user selected the approved tariff plans",
+            "match": {
+              "location": "AddTariffPlanToCustomer.the_user_selected_the_approved_tariff_plans(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "customer_id",
+                  "244295"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 385028294,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user clicks add tariff plans to customer",
+            "match": {
+              "location": "AddTariffPlanToCustomer.the_user_clicks_add_tariff_plans_to_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100341593,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the congratulation tariff plan assigned message should be displayed",
+            "match": {
+              "location": "AddTariffPlanToCustomer.the_congratulation_tariff_plan_assigned_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          }
+        ]
+      }
+    ],
+    "name": "To test the add tariff plan and add tariff plan to customer functionality",
+    "description": "",
+    "id": "to-test-the-add-tariff-plan-and-add-tariff-plan-to-customer-functionality",
+    "keyword": "Feature",
+    "uri": "C:/Users/Rama/eclipse-workspace/Cucum/resource.pkg/AddTariffPlan.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14190806917,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserlaunch()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "To test the bill generation functionality",
+        "description": "",
+        "id": "to-test-the-billing-functionality;to-test-the-bill-generation-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 2185811102,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserQuit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1180946781,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is in pay billing page",
+            "match": {
+              "location": "BillingPage.the_user_is_in_pay_billing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1522431310,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the submit button",
+            "match": {
+              "location": "BillingPage.the_user_clicks_the_submit_button(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "customer_id",
+                  "244295"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 278783621,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the billing details should be displayed",
+            "match": {
+              "location": "BillingPage.the_billing_details_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "To test the billing functionality",
+    "description": "",
+    "id": "to-test-the-billing-functionality",
+    "keyword": "Feature",
+    "uri": "C:/Users/Rama/eclipse-workspace/Cucum/resource.pkg/Billing.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
