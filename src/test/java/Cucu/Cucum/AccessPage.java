@@ -2,7 +2,7 @@ package Cucu.Cucum;
 
 import org.junit.Assert;
 import cucumber.api.java.en.Then;
-import objectRepository.AccessPageStep;
+import objectrepository.AccessPageStep;
 
 public class AccessPage {
 	@Then("the user should see the customer id generated")
